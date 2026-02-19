@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stefan Jordi Giurgiu | Portafolio</title>
+    <title>Stefan Jordi Giurgiu | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <script>
@@ -14,7 +14,7 @@
                     colors: {
                         primary: '#3b82f6', // blue-500
                         secondary: '#10b981', // emerald-500
-                        accent: '#f59e0b', // amber-500 (Nuevo para el TDR)
+                        accent: '#f59e0b', // amber-500
                         dark: '#0f172a', // slate-900
                         card: '#1e293b', // slate-800
                     },
@@ -38,38 +38,15 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0f172a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #334155;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #475569;
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
         
-        /* Modal Animation */
-        .modal {
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-        .modal.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        .modal-content {
-            transform: scale(0.95);
-            transition: transform 0.3s ease;
-        }
-        .modal.active .modal-content {
-            transform: scale(1);
-        }
+        .modal { opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; }
+        .modal.active { opacity: 1; visibility: visible; }
+        .modal-content { transform: scale(0.95); transition: transform 0.3s ease; }
+        .modal.active .modal-content { transform: scale(1); }
         
         .prose-invert h3 { color: #60a5fa; margin-top: 1.5rem; margin-bottom: 0.5rem; font-weight: bold; font-size: 1.25rem; }
         .prose-invert h4 { color: #34d399; margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 600; }
@@ -80,7 +57,6 @@
 </head>
 <body class="bg-dark text-gray-300 antialiased selection:bg-primary selection:text-white">
 
-    <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
@@ -89,14 +65,13 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#about" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Sobre mí</a>
-                        <a href="#experience" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Experiencia</a>
-                        <a href="#projects" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Proyectos</a>
-                        <a href="#skills" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Habilidades</a>
-                        <a href="#contact" class="bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-all transform hover:scale-105">Contacto</a>
+                        <a href="#about" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About me</a>
+                        <a href="#experience" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                        <a href="#projects" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#skills" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#contact" class="bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-all transform hover:scale-105">Contact</a>
                     </div>
                 </div>
-                <!-- Mobile menu button -->
                 <div class="-mr-2 flex md:hidden">
                     <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
                         <i class="fas fa-bars"></i>
@@ -104,47 +79,44 @@
                 </div>
             </div>
         </div>
-        <!-- Mobile Menu -->
         <div class="hidden md:hidden bg-card" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-700">
-                <a href="#about" class="block hover:text-white px-3 py-2 rounded-md text-base font-medium">Sobre mí</a>
-                <a href="#experience" class="block hover:text-white px-3 py-2 rounded-md text-base font-medium">Experiencia</a>
-                <a href="#projects" class="block hover:text-white px-3 py-2 rounded-md text-base font-medium">Proyectos</a>
-                <a href="#contact" class="block text-primary font-bold px-3 py-2 rounded-md text-base">Contacto</a>
+                <a href="#about" class="block hover:text-white px-3 py-2 rounded-md text-base font-medium">About me</a>
+                <a href="#experience" class="block hover:text-white px-3 py-2 rounded-md text-base font-medium">Experience</a>
+                <a href="#projects" class="block hover:text-white px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#contact" class="block text-primary font-bold px-3 py-2 rounded-md text-base">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="about" class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
-        <!-- Background Elements -->
         <div class="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
         <div class="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style="animation-duration: 4s;"></div>
 
         <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
             <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full">
-                Ingeniería Física & Computación
+                Engineering Physics & Computing
             </div>
             <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
-                Hola, soy <span class="gradient-text">Stefan Jordi Giurgiu</span>
+                Hi, I'm <span class="gradient-text">Stefan Jordi Giurgiu</span>
             </h1>
             <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400">
-                Estudiante de Ingeniería Física en la UPC apasionado por la simulación numérica, la computación cuántica y la resolución de problemas complejos mediante programación científica.
+                Engineering Physics student at UPC passionate about numerical simulation, quantum computing, and solving complex problems through scientific programming.
             </p>
             
             <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#contact" class="px-8 py-3 rounded-full bg-primary text-white font-bold hover:bg-blue-600 transition-all shadow-lg shadow-blue-500/30">
-                    Contactar
+                    Get in touch
                 </a>
                 <a href="#projects" class="px-8 py-3 rounded-full border border-gray-600 hover:border-white hover:text-white transition-all bg-transparent">
-                    Ver Proyectos
+                    View Projects
                 </a>
             </div>
 
             <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center border-t border-gray-800 pt-8">
                 <div>
                     <div class="text-3xl font-bold text-white">UPC</div>
-                    <div class="text-sm text-gray-500">Ingeniería Física</div>
+                    <div class="text-sm text-gray-500">Engineering Physics</div>
                 </div>
                 <div>
                     <div class="text-3xl font-bold text-white">ICIQ</div>
@@ -155,35 +127,31 @@
                     <div class="text-sm text-gray-500">Fellow of La Pedrera Science Academy</div>
                 </div>
                 <div>
-                    <div class="text-3xl font-bold text-white leading-tight">Programación</div>
+                    <div class="text-3xl font-bold text-white leading-tight">Programming</div>
                     <div class="text-sm text-gray-500">Python, MATLAB, Julia</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="py-20 bg-dark">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
                 <span class="w-2 h-8 bg-secondary mr-4 rounded-full"></span>
-                Trayectoria Académica y Profesional
+                Academic & Professional Background
             </h2>
 
             <div class="relative border-l border-gray-700 ml-3 md:ml-6 space-y-12">
                 
-                <!-- Experience Item 1 -->
                 <div class="relative pl-8 md:pl-12 group">
                     <span class="absolute -left-[9px] top-0 h-5 w-5 rounded-full border-4 border-dark bg-primary group-hover:scale-125 transition-transform"></span>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                         <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">Undergraduate Researcher</h3>
-                        <span class="text-sm text-gray-400 bg-card px-3 py-1 rounded-full border border-gray-700">Jul 2025 – Presente</span>
+                        <span class="text-sm text-gray-400 bg-card px-3 py-1 rounded-full border border-gray-700">Jul 2025 – Present</span>
                     </div>
                     <p class="text-primary font-medium mb-2">Institute of Chemical Research of Catalonia (ICIQ)</p>
                     <p class="text-gray-400 mb-4">
-                        Aplicación de química computacional y métodos numéricos para simular sistemas moleculares. 
-                        Desarrollo de enfoques de optimización numérica para DFT y dinámica molecular. 
-                        Actualmente sigo colaborando con el grupo de investigación.
+                        Application of computational chemistry and numerical methods to simulate molecular systems. Development of numerical optimization approaches for DFT and molecular dynamics. Currently collaborating with the research group.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 text-xs bg-gray-800 text-gray-300 rounded">DFT</span>
@@ -192,16 +160,15 @@
                     </div>
                 </div>
 
-                <!-- Experience Item 2 (AESS) -->
                 <div class="relative pl-8 md:pl-12 group">
                     <span class="absolute -left-[9px] top-0 h-5 w-5 rounded-full border-4 border-dark bg-blue-400 group-hover:scale-125 transition-transform"></span>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
                         <h3 class="text-xl font-bold text-white group-hover:text-blue-300 transition-colors">Member Associate</h3>
-                        <span class="text-sm text-gray-400 bg-card px-3 py-1 rounded-full border border-gray-700">Sep 2025 – Presente</span>
+                        <span class="text-sm text-gray-400 bg-card px-3 py-1 rounded-full border border-gray-700">Sep 2025 – Present</span>
                     </div>
                     <p class="text-blue-400 font-medium mb-2">Aerospace and Electronic Systems Society (AESS) - UPC</p>
                     <p class="text-gray-400 mb-4">
-                        Diseño y construcción de cohetes de propulsión sólida. Gestión estratégica de relaciones públicas y creación de contenido para aumentar la visibilidad del equipo.
+                        Design and construction of solid propulsion rockets. Strategic management of public relations and content creation to increase team visibility.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 text-xs bg-gray-800 text-gray-300 rounded">Rocketry</span>
@@ -210,16 +177,15 @@
                     </div>
                 </div>
 
-                 <!-- Experience Item 3 (Fisidabo) -->
                  <div class="relative pl-8 md:pl-12 group">
                     <span class="absolute -left-[9px] top-0 h-5 w-5 rounded-full border-4 border-dark bg-yellow-500 group-hover:scale-125 transition-transform"></span>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                        <h3 class="text-xl font-bold text-white group-hover:text-yellow-300 transition-colors">Coordinador del Proyecto Fisidabo</h3>
+                        <h3 class="text-xl font-bold text-white group-hover:text-yellow-300 transition-colors">Fisidabo Project Coordinator</h3>
                         <span class="text-sm text-gray-400 bg-card px-3 py-1 rounded-full border border-gray-700">May 2025</span>
                     </div>
-                    <p class="text-yellow-400 font-medium mb-2">Parc d'Atraccions Tibidabo</p>
+                    <p class="text-yellow-400 font-medium mb-2">Tibidabo Amusement Park</p>
                     <p class="text-gray-400 mb-4">
-                        Coordinación de actividades y soporte en la organización de eventos, asegurando una interacción fluida entre estudiantes y profesorado en jornadas científicas.
+                        Coordination of activities and event support, ensuring smooth interaction between students and faculty during scientific workshops.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 text-xs bg-gray-800 text-gray-300 rounded">Leadership</span>
@@ -227,33 +193,30 @@
                     </div>
                 </div>
 
-                <!-- Experience Item 4 -->
                 <div class="relative pl-8 md:pl-12 group">
                     <span class="absolute -left-[9px] top-0 h-5 w-5 rounded-full border-4 border-dark bg-primary group-hover:scale-125 transition-transform"></span>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                        <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">Grado en Ingeniería Física</h3>
-                        <span class="text-sm text-gray-400 bg-card px-3 py-1 rounded-full border border-gray-700">2024 – 2028 (Actualidad)</span>
+                        <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">Bachelor's Degree in Engineering Physics</h3>
+                        <span class="text-sm text-gray-400 bg-card px-3 py-1 rounded-full border border-gray-700">2024 – 2028 (Present)</span>
                     </div>
-                    <p class="text-primary font-medium mb-2">Universitat Politècnica de Catalunya (UPC)</p>
+                    <p class="text-primary font-medium mb-2">Polytechnic University of Catalonia (UPC)</p>
                     <p class="text-gray-400">
-                        Formación rigurosa en física fundamental, matemáticas avanzadas y aplicaciones de ingeniería.
+                        Rigorous training in fundamental physics, advanced mathematics, and engineering applications.
                     </p>
                 </div>
 
-                <!-- Experience Item 5 -->
                 <div class="relative pl-8 md:pl-12 group">
                     <span class="absolute -left-[9px] top-0 h-5 w-5 rounded-full border-4 border-dark bg-purple-500 group-hover:scale-125 transition-transform"></span>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                        <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">Certificación PCAP Python</h3>
+                        <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">PCAP Python Certification</h3>
                         <span class="text-sm text-gray-400 bg-card px-3 py-1 rounded-full border border-gray-700">May 2025 – Oct 2025</span>
                     </div>
                     <p class="text-purple-400 font-medium mb-2">Tokio School</p>
                     <p class="text-gray-400">
-                        Programa avanzado de 30 créditos en Python, estructuras de datos, programación modular, SQL y Java.
+                        Advanced 30-credit program in Python, data structures, modular programming, SQL, and Java.
                     </p>
                 </div>
 
-                <!-- Experience Item 6 -->
                 <div class="relative pl-8 md:pl-12 group">
                     <span class="absolute -left-[9px] top-0 h-5 w-5 rounded-full border-4 border-dark bg-secondary group-hover:scale-125 transition-transform"></span>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
@@ -262,8 +225,7 @@
                     </div>
                     <p class="text-secondary font-medium mb-2">The Institute of Photonic Sciences (ICFO)</p>
                     <p class="text-gray-400 mb-4">
-                        Participación en el Barcelona International Youth Science Challenge (BIYSC).
-                        Implementación del protocolo de distribución de claves cuánticas BB84 usando Julia.
+                        Participation in the Barcelona International Youth Science Challenge (BIYSC). Implementation of the BB84 quantum key distribution protocol using Julia.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 text-xs bg-gray-800 text-gray-300 rounded">Julia</span>
@@ -276,136 +238,93 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="py-20 bg-card/30 relative">
-         <!-- Decoration -->
-         <div class="absolute right-0 top-1/4 w-1/3 h-1/2 bg-blue-600/5 blur-[100px] pointer-events-none"></div>
+        <div class="absolute right-0 top-1/4 w-1/3 h-1/2 bg-blue-600/5 blur-[100px] pointer-events-none"></div>
 
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-white mb-4 text-center">Proyectos Destacados</h2>
+            <h2 class="text-3xl font-bold text-white mb-4 text-center">Featured Projects</h2>
             <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
-                Investigación aplicada en criptografía cuántica, física de materiales, química computacional y química experimental.
+                Applied research in quantum cryptography, materials physics, computational chemistry, and experimental chemistry.
             </p>
 
             <div class="grid lg:grid-cols-3 gap-8">
                 
-                <!-- Project 1: Topological Materials -->
                 <div class="glass-card rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col h-full">
                     <div class="h-40 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center relative overflow-hidden">
-                        <!-- Labels inside the image container -->
                         <div class="absolute top-3 right-3 flex flex-col items-end gap-1 z-10">
-                            <span class="bg-blue-900/80 backdrop-blur-sm text-blue-200 text-[10px] px-2 py-0.5 rounded border border-blue-800 whitespace-nowrap shadow-lg">Undergrad. Research</span>
+                            <span class="bg-blue-900/80 backdrop-blur-sm text-blue-200 text-[10px] px-2 py-0.5 rounded border border-blue-800 shadow-lg">Undergrad. Research</span>
                             <span class="bg-gray-800/80 backdrop-blur-sm text-gray-300 text-[10px] px-2 py-0.5 rounded border border-gray-700 flex items-center shadow-lg">
                                 <i class="far fa-calendar-alt mr-1.5"></i>2026
                             </span>
                         </div>
-
-                        <!-- Abstract Visual Representation -->
-                        <div class="absolute inset-0 opacity-20">
-                            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/>
-                                </pattern>
-                                <rect width="100%" height="100%" fill="url(#grid)" />
-                            </svg>
-                        </div>
                         <i class="fas fa-atom text-5xl text-primary group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-                    
                     <div class="p-6 flex-grow flex flex-col">
-                        <div class="mb-4">
-                            <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors leading-tight">Topological Quantum Materials</h3>
-                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors leading-tight mb-4">Topological Quantum Materials</h3>
                         <p class="text-gray-400 text-sm mb-6 flex-grow">
-                            Estudio teórico y simulación práctica de Aislantes Topológicos y el Efecto Hall Cuántico con el modelo <strong>BHZ</strong>.
+                            Theoretical study and practical simulation of Topological Insulators and the Quantum Hall Effect with the <strong>BHZ</strong> model.
                         </p>
-                        
                         <div class="mt-4 pt-4 border-t border-gray-700 flex flex-wrap gap-2 justify-between items-center">
                             <div class="flex gap-2">
                                 <span class="px-2 py-1 text-xs bg-gray-700 rounded text-gray-300">Python</span>
                                 <span class="px-2 py-1 text-xs bg-gray-700 rounded text-gray-300">Kwant</span>
                             </div>
                             <button onclick="openModal('modal-topo')" class="text-xs font-bold text-primary hover:text-white transition-colors flex items-center">
-                                Leer <i class="fas fa-arrow-right ml-1"></i>
+                                Read More <i class="fas fa-arrow-right ml-1"></i>
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2: Uranyl Speciation -->
                 <div class="glass-card rounded-2xl overflow-hidden hover:border-secondary/50 transition-all group flex flex-col h-full">
                     <div class="h-40 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center relative overflow-hidden">
-                        <!-- Labels inside the image container -->
                          <div class="absolute top-3 right-3 flex flex-col items-end gap-1 z-10">
-                            <span class="bg-emerald-900/80 backdrop-blur-sm text-emerald-200 text-[10px] px-2 py-0.5 rounded border border-emerald-800 whitespace-nowrap shadow-lg">ICIQ Intern</span>
+                            <span class="bg-emerald-900/80 backdrop-blur-sm text-emerald-200 text-[10px] px-2 py-0.5 rounded border border-emerald-800 shadow-lg">ICIQ Intern</span>
                             <span class="bg-gray-800/80 backdrop-blur-sm text-gray-300 text-[10px] px-2 py-0.5 rounded border border-gray-700 flex items-center shadow-lg">
                                 <i class="far fa-calendar-alt mr-1.5"></i>2025
                             </span>
                         </div>
-
-                        <div class="absolute inset-0 opacity-20">
-                            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="0.5" fill="none" />
-                                <circle cx="150" cy="150" r="80" stroke="white" stroke-width="0.5" fill="none" />
-                            </svg>
-                        </div>
                         <i class="fas fa-flask text-5xl text-secondary group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-                    
                     <div class="p-6 flex-grow flex flex-col">
-                        <div class="mb-4">
-                            <h3 class="text-xl font-bold text-white group-hover:text-secondary transition-colors leading-tight">Uranyl Speciation Simulation</h3>
-                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-secondary transition-colors leading-tight mb-4">Uranyl Speciation Simulation</h3>
                         <p class="text-gray-400 text-sm mb-6 flex-grow">
-                            Modelado de la especiación de uranilo en medios carbonatados usando <strong>POMSimulator</strong> y DFT para validar modelos.
+                            Modeling of uranyl speciation in carbonate media using <strong>POMSimulator</strong> and DFT to validate models.
                         </p>
-                        
                         <div class="mt-4 pt-4 border-t border-gray-700 flex flex-wrap gap-2 justify-between items-center">
                              <div class="flex gap-2">
                                 <span class="px-2 py-1 text-xs bg-gray-700 rounded text-gray-300">DFT</span>
                                 <span class="px-2 py-1 text-xs bg-gray-700 rounded text-gray-300">POMSim</span>
                             </div>
                             <button onclick="openModal('modal-iciq')" class="text-xs font-bold text-secondary hover:text-white transition-colors flex items-center">
-                                Leer <i class="fas fa-arrow-right ml-1"></i>
+                                Read More <i class="fas fa-arrow-right ml-1"></i>
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3: Acid Rain (TDR) -->
                 <div class="glass-card rounded-2xl overflow-hidden hover:border-accent/50 transition-all group flex flex-col h-full">
                     <div class="h-40 bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center relative overflow-hidden">
-                        <!-- Labels inside the image container -->
                         <div class="absolute top-3 right-3 flex flex-col items-end gap-1 z-10">
-                            <span class="bg-amber-900/80 backdrop-blur-sm text-amber-200 text-[10px] px-2 py-0.5 rounded border border-amber-800 text-right shadow-lg">Top-ranked High School Research Project</span>
+                            <span class="bg-amber-900/80 backdrop-blur-sm text-amber-200 text-[10px] px-2 py-0.5 rounded border border-amber-800 text-right shadow-lg">Top High School Research Project</span>
                             <span class="bg-gray-800/80 backdrop-blur-sm text-gray-300 text-[10px] px-2 py-0.5 rounded border border-gray-700 flex items-center shadow-lg">
                                 <i class="far fa-calendar-alt mr-1.5"></i>2024
                             </span>
                         </div>
-
-                        <div class="absolute inset-0 opacity-20">
-                             <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50 0L100 100H0L50 0Z" fill="white" fill-opacity="0.1"/>
-                            </svg>
-                        </div>
                         <i class="fas fa-cloud-showers-heavy text-5xl text-accent group-hover:scale-110 transition-transform duration-500"></i>
                     </div>
-                    
                     <div class="p-6 flex-grow flex flex-col">
-                        <div class="mb-4">
-                            <h3 class="text-xl font-bold text-white group-hover:text-accent transition-colors leading-tight">Acid Rain & Wheat Crops</h3>
-                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-accent transition-colors leading-tight mb-4">Acid Rain & Wheat Crops</h3>
                         <p class="text-gray-400 text-sm mb-6 flex-grow">
-                            Investigación experimental sobre el impacto de la lluvia ácida en los cultivos. Análisis de pH, atmósfera artificial y germinación.
+                            Experimental research on the impact of acid rain on crops. Analysis of pH, artificial atmosphere, and germination.
                         </p>
-                        
                         <div class="mt-4 pt-4 border-t border-gray-700 flex flex-wrap gap-2 justify-between items-center">
                              <div class="flex gap-2">
                                 <span class="px-2 py-1 text-xs bg-gray-700 rounded text-gray-300">Experimental</span>
                                 <span class="px-2 py-1 text-xs bg-gray-700 rounded text-gray-300">Chemistry</span>
                             </div>
                             <button onclick="openModal('modal-tdr')" class="text-xs font-bold text-accent hover:text-white transition-colors flex items-center">
-                                Leer <i class="fas fa-arrow-right ml-1"></i>
+                                Read More <i class="fas fa-arrow-right ml-1"></i>
                             </button>
                         </div>
                     </div>
@@ -415,16 +334,14 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="py-20 bg-dark border-t border-gray-800">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-white mb-12 text-center">Habilidades Técnicas & Idiomas</h2>
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Technical Skills & Languages</h2>
             
             <div class="grid md:grid-cols-2 gap-12">
-                <!-- Programming -->
                 <div>
                     <h3 class="text-xl font-bold text-white mb-6 flex items-center">
-                        <i class="fas fa-code text-primary mr-3"></i> Programación
+                        <i class="fas fa-code text-primary mr-3"></i> Programming
                     </h3>
                     <div class="space-y-4">
                         <div>
@@ -462,26 +379,25 @@
                     </div>
                 </div>
 
-                <!-- Languages & Soft Skills -->
                 <div>
                     <h3 class="text-xl font-bold text-white mb-6 flex items-center">
-                        <i class="fas fa-globe text-secondary mr-3"></i> Idiomas
+                        <i class="fas fa-globe text-secondary mr-3"></i> Languages
                     </h3>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="p-4 bg-card rounded-lg border border-gray-700 text-center">
-                            <div class="text-2xl font-bold text-white mb-1">Español</div>
-                            <div class="text-xs text-gray-400 uppercase">Nativo</div>
+                            <div class="text-2xl font-bold text-white mb-1">Spanish</div>
+                            <div class="text-xs text-gray-400 uppercase">Native</div>
                         </div>
                         <div class="p-4 bg-card rounded-lg border border-gray-700 text-center">
-                            <div class="text-2xl font-bold text-white mb-1">Catalán</div>
-                            <div class="text-xs text-gray-400 uppercase">Nativo</div>
+                            <div class="text-2xl font-bold text-white mb-1">Catalan</div>
+                            <div class="text-xs text-gray-400 uppercase">Native</div>
                         </div>
                         <div class="p-4 bg-card rounded-lg border border-gray-700 text-center">
-                            <div class="text-2xl font-bold text-white mb-1">Rumano</div>
-                            <div class="text-xs text-gray-400 uppercase">Nativo</div>
+                            <div class="text-2xl font-bold text-white mb-1">Romanian</div>
+                            <div class="text-xs text-gray-400 uppercase">Native</div>
                         </div>
                         <div class="p-4 bg-card rounded-lg border border-gray-700 text-center">
-                            <div class="text-2xl font-bold text-white mb-1">Inglés</div>
+                            <div class="text-2xl font-bold text-white mb-1">English</div>
                             <div class="text-xs text-gray-400 uppercase">B2 - Cambridge</div>
                         </div>
                     </div>
@@ -499,12 +415,11 @@
         </div>
     </section>
 
-    <!-- Footer / Contact -->
     <footer id="contact" class="bg-black py-12 border-t border-gray-900">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-white mb-6">¿Hablamos?</h2>
+            <h2 class="text-3xl font-bold text-white mb-6">Let's Talk</h2>
             <p class="text-gray-400 mb-8">
-                Estoy abierto a oportunidades de investigación y colaboración en física computacional e ingeniería.
+                I am open to research opportunities and collaboration in computational physics and engineering.
             </p>
             
             <div class="flex justify-center flex-wrap gap-6 mb-12">
@@ -512,13 +427,13 @@
                     <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <span>Email Universitario</span>
+                    <span>University Email</span>
                 </a>
                  <a href="mailto:stefanjg272006@gmail.com" class="flex items-center space-x-2 text-white hover:text-primary transition-colors">
                     <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
                         <i class="fas fa-paper-plane"></i>
                     </div>
-                    <span>Email Personal</span>
+                    <span>Personal Email</span>
                 </a>
                 <span class="flex items-center space-x-2 text-white">
                     <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
@@ -529,12 +444,11 @@
             </div>
 
             <p class="text-gray-600 text-sm">
-                &copy; 2025 Stefan Jordi Giurgiu. Diseñado con Tailwind CSS.
+                &copy; 2025 Stefan Jordi Giurgiu. Designed with Tailwind CSS.
             </p>
         </div>
     </footer>
 
-    <!-- MODAL 1: Topological Quantum Materials -->
     <div id="modal-topo" class="modal fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
         <div class="modal-content glass-card w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative">
             <button onclick="closeModal('modal-topo')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
@@ -546,47 +460,26 @@
                 
                 <div class="prose-invert">
                     <h3>1. Introduction</h3>
-                    <p>
-                        This work explores the field of topological quantum materials, covering quantum insulators through the study of diverse quantized Hall Effects, both theoretically and practically via computer-based condensed matter simulation.
-                    </p>
-
+                    <p>This work explores the field of topological quantum materials, covering quantum insulators through the study of diverse quantized Hall Effects, both theoretically and practically via computer-based condensed matter simulation.</p>
                     <h3>2. Theoretical Framework</h3>
                     <h4>Topological Insulators & Hall Effect</h4>
-                    <p>
-                        The study delves into the Integer Quantum Hall Effect (IQHE) where Hall conductance is quantized. We analyzed the role of the <strong>Berry Phase</strong> and the <strong>Chern Number</strong> as topological invariants (integers) that characterize the quantized Hall conductivity.
-                    </p>
+                    <p>The study delves into the Integer Quantum Hall Effect (IQHE) where Hall conductance is quantized. We analyzed the role of the <strong>Berry Phase</strong> and the <strong>Chern Number</strong>.</p>
                     <h4>BHZ Model</h4>
-                    <p>
-                        We focused on the Bernevig-Hughes-Zhang (BHZ) model for HgTe/CdTe quantum wells. In the topological regime (thickness > 6.3 nm), the band structure inverts, creating conducting edge states protected by Time Reversal Symmetry (TRS).
-                    </p>
-
+                    <p>We focused on the Bernevig-Hughes-Zhang (BHZ) model for HgTe/CdTe quantum wells.</p>
                     <h3>3. Computational Simulation</h3>
-                    <p>
-                        Using Python and the <code>kwant</code> library, we implemented the effective BHZ Hamiltonian to simulate a nanoribbon of HgTe.
-                    </p>
-                    <ul>
-                        <li><strong>Bulk Bands:</strong> Observed the energy gap opening in the bulk material.</li>
-                        <li><strong>Surface Bands:</strong> Verified the existence of "X"-shaped crossing lines within the forbidden gap (Dirac cones), indicating massless edge states.</li>
-                        <li><strong>Probability Density:</strong> The simulation confirmed that for states within the gap, the probability density is localized at the edges, decaying exponentially towards the center.</li>
-                    </ul>
-
-                    <h3>4. Topological Qubits</h3>
-                    <p>
-                        The project also reviewed the theoretical basis of Majorana Fermions and the Kitaev Chain model. Majorana Zero Modes (MZMs) in topological superconductors offer potential for robust topological quantum computing, where qubits are protected from local decoherence.
-                    </p>
+                    <p>Using Python and the <code>kwant</code> library, we implemented the effective BHZ Hamiltonian.</p>
                 </div>
                 
                 <div class="mt-8 pt-6 border-t border-gray-700 flex justify-between items-center">
-                    <span class="text-sm text-gray-500">Autores: Bru Serra, Marcel Vilaró, Stefan Giurgiu | Institución: UPC</span>
+                    <span class="text-sm text-gray-500">Authors: Bru Serra, Marcel Vilaró, Stefan Giurgiu | UPC</span>
                     <a href="Topological_Quantum_Materials.pdf" download class="bg-primary hover:bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors flex items-center">
-                        <i class="fas fa-file-pdf mr-2"></i> Descargar PDF Completo
+                        <i class="fas fa-file-pdf mr-2"></i> Download Full PDF
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- MODAL 2: Uranyl Speciation (ICIQ) -->
     <div id="modal-iciq" class="modal fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
         <div class="modal-content glass-card w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative">
             <button onclick="closeModal('modal-iciq')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
@@ -598,78 +491,48 @@
                 
                 <div class="prose-invert">
                     <h3>1. Introduction</h3>
-                    <p>
-                        Polyoxometalates (POMs) are complex molecular nanoclusters. This project applied the <strong>POMSimulator</strong> software to model the speciation of uranyl in carbonate media, treating the uranyl-carbonate system as a heteropolyoxometalate. The goal was to reproduce and validate speciation results under varying conditions.
-                    </p>
-
+                    <p>Polyoxometalates (POMs) are complex molecular nanoclusters. This project applied the <strong>POMSimulator</strong> software to model the speciation of uranyl in carbonate media.</p>
                     <h3>2. Methodology</h3>
                     <ul>
-                        <li><strong>Preparation:</strong> Identification of chemical species and modelling using <em>Amsterdam Density Functional (ADF)</em> to obtain initial geometries.</li>
-                        <li><strong>Simulation:</strong> Used <code>POMsimulator</code> to calculate formation constants.</li>
-                        <li><strong>Scaling:</strong> Constants were scaled using Python scripts. The "Best_rmse" method (individual adjustment) proved most accurate compared to universal scaling.</li>
+                        <li><strong>Preparation:</strong> Modeling using <em>Amsterdam Density Functional (ADF)</em>.</li>
+                        <li><strong>Simulation:</strong> Calculation of formation constants using <code>POMsimulator</code>.</li>
                     </ul>
-
-                    <h3>3. Results & Discussion</h3>
-                    <p>
-                        We successfully generated speciation diagrams (distribution of species vs pH). A critical finding was the instability of the model when the carbonate-to-uranium ratio approached 10:1.
-                    </p>
-                    <p>
-                        Progressive ratio testing (1:0.9 to 1:0.3) showed that valid models decreased drastically as carbonate concentration increased. However, for lower ratios, the clustered species diagrams matched experimental literature well.
-                    </p>
-
-                    <h3>4. Conclusions</h3>
-                    <p>
-                        The workflow confirmed that POMSimulator is a powerful tool for complex inorganic systems. The <em>best_rmse</em> scaling strategy is essential for accuracy. Future work involves resolving the high-ratio instability to extend the analysis to different temperatures.
-                    </p>
                 </div>
                 
                 <div class="mt-8 pt-6 border-t border-gray-700 flex justify-between items-center">
-                    <span class="text-sm text-gray-500">Autor: Stefan Jordi Giurgiu | Institución: ICIQ</span>
+                    <span class="text-sm text-gray-500">Author: Stefan Jordi Giurgiu | Institution: ICIQ</span>
                     <a href="Report_Stefan_Jordi_Giurgiu.pdf" download class="bg-secondary hover:bg-emerald-600 text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors flex items-center">
-                        <i class="fas fa-file-pdf mr-2"></i> Descargar PDF Completo
+                        <i class="fas fa-file-pdf mr-2"></i> Download Full PDF
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- MODAL 3: Acid Rain TDR (Nuevo) -->
     <div id="modal-tdr" class="modal fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
         <div class="modal-content glass-card w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative">
             <button onclick="closeModal('modal-tdr')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
                 <i class="fas fa-times"></i>
             </button>
             <div class="p-8">
-                <h2 class="text-3xl font-bold text-white mb-2">Impacto de la Lluvia Ácida en Cultivos</h2>
-                <div class="text-accent text-sm font-semibold mb-6">Investigación Experimental en Alcover</div>
+                <h2 class="text-3xl font-bold text-white mb-2">Impact of Acid Rain on Crops</h2>
+                <div class="text-accent text-sm font-semibold mb-6">Experimental Research in Alcover</div>
                 
                 <div class="prose-invert">
-                    <h3 style="color: #f59e0b;">1. Introducción y Contexto</h3>
-                    <p>
-                        La contaminación atmosférica y la lluvia ácida representan riesgos significativos para la agricultura local. Este trabajo investiga si la lluvia ácida es un factor de riesgo real para las plantaciones de trigo en la zona de Alcover, mediante un enfoque experimental riguroso.
-                    </p>
-
-                    <h3 style="color: #f59e0b;">2. Metodología Experimental</h3>
-                    <p>Se diseñaron tres experimentos complementarios para evaluar el impacto:</p>
+                    <h3 style="color: #f59e0b;">1. Introduction & Context</h3>
+                    <p>Air pollution and acid rain pose significant risks to local agriculture. This work investigates if acid rain is a real risk factor for wheat plantations in Alcover.</p>
+                    <h3 style="color: #f59e0b;">2. Experimental Methodology</h3>
                     <ul>
-                        <li><strong>Experimento 1 (Monitoreo):</strong> Seguimiento de los valores de pH y conductividad del agua de lluvia real en Alcover, detectando presencia de sulfatos y nitratos.</li>
-                        <li><strong>Experimento 2 (Atmósfera Artificial):</strong> Creación de una atmósfera controlada para replicar y observar el proceso de acidificación del agua por contaminantes gaseosos.</li>
-                        <li><strong>Experimento 3 (Germinación):</strong> Estudio del efecto de diferentes concentraciones de ácido sobre la tasa de germinación de semillas de trigo.</li>
+                        <li><strong>Monitoring:</strong> pH and conductivity of real rain water.</li>
+                        <li><strong>Artificial Atmosphere:</strong> Controlled environment for gas acidification.</li>
+                        <li><strong>Germination:</strong> Effect of acidity on wheat seed germination rates.</li>
                     </ul>
-
-                    <h3 style="color: #f59e0b;">3. Resultados y Conclusiones</h3>
-                    <p>
-                        El estudio proporcionó datos cuantitativos sobre la resistencia del trigo a condiciones de acidez. Se observó una correlación directa entre el aumento de la acidez y la disminución de la tasa de germinación, estableciendo umbrales de riesgo para los cultivos locales.
-                    </p>
-                    <p>
-                        Este trabajo destaca por la aplicación del método científico para resolver una problemática medioambiental local, utilizando herramientas de química analítica (testers de pH, tiras reactivas) y análisis estadístico de datos biológicos.
-                    </p>
                 </div>
                 
                 <div class="mt-8 pt-6 border-t border-gray-700 flex justify-between items-center">
-                    <span class="text-sm text-gray-500">Autor: Stefan Jordi Giurgiu | Distinción: Trabajo de Investigación</span>
+                    <span class="text-sm text-gray-500">Author: Stefan Jordi Giurgiu | Distinction: Research Project</span>
                     <a href="Stefan_Jordi_Giurgiu_TDR.pdf" download class="bg-accent hover:bg-amber-600 text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors flex items-center">
-                        <i class="fas fa-file-pdf mr-2"></i> Descargar PDF Completo
+                        <i class="fas fa-file-pdf mr-2"></i> Download Full PDF
                     </a>
                 </div>
             </div>
@@ -677,28 +540,23 @@
     </div>
 
     <script>
-        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
         });
 
-        // Modal Logic
         function openModal(id) {
             document.getElementById(id).classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling bg
+            document.body.style.overflow = 'hidden';
         }
 
         function closeModal(id) {
             document.getElementById(id).classList.remove('active');
-            document.body.style.overflow = 'auto'; // Restore scrolling
+            document.body.style.overflow = 'auto';
         }
 
-        // Close modal on click outside
         document.querySelectorAll('.modal').forEach(modal => {
             modal.addEventListener('click', function(e) {
                 if (e.target === this) {
@@ -710,6 +568,3 @@
     </script>
 </body>
 </html>
-
-
-
