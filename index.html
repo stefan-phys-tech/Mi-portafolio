@@ -56,16 +56,17 @@
 <body class="bg-dark text-gray-300 antialiased selection:bg-primary selection:text-white">
 
     <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0 font-bold text-xl text-white tracking-wider">
                     SJG<span class="text-primary">.</span>
                 </div>
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
+                    <div class="ml-10 flex items-baseline space-x-6">
                         <a href="#about" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About Me</a>
                         <a href="#experience" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Experience</a>
                         <a href="#projects" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#workshops" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Workshops</a>
                         <a href="#skills" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
                         <a href="#contact" class="bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-all transform hover:scale-105">Contact</a>
                     </div>
@@ -82,60 +83,64 @@
                 <a href="#about" class="block hover:text-white px-3 py-2 rounded-md text-base font-medium">About Me</a>
                 <a href="#experience" class="block hover:text-white px-3 py-2 rounded-md text-base font-medium">Experience</a>
                 <a href="#projects" class="block hover:text-white px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#workshops" class="block hover:text-white px-3 py-2 rounded-md text-base font-medium">Workshops</a>
+                <a href="#skills" class="block hover:text-white px-3 py-2 rounded-md text-base font-medium">Skills</a>
                 <a href="#contact" class="block text-primary font-bold px-3 py-2 rounded-md text-base">Contact</a>
             </div>
         </div>
     </nav>
 
-    <section id="about" class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+    <section id="about" class="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 overflow-hidden">
         <div class="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
         <div class="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style="animation-duration: 4s;"></div>
 
-        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-            <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full">
-                Physics Engineering & Scientific Computing
-            </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
-                Hi, I'm <span class="gradient-text">Stefan Jordi Giurgiu</span>
-            </h1>
-            
-            <div class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-400 leading-relaxed space-y-5">
-                <p>
-                    Engineering Physics student with a strong passion for <span class="text-white font-medium">science and technology</span>, backed by research experience at prestigious institutions such as <span class="text-secondary font-semibold">ICIQ</span> and <span class="text-primary font-semibold">ICFO</span>.
-                </p>
-                <p>
-                    Proactive and highly motivated individual with a quick learning curve. Skilled in <span class="text-white font-medium">computational modelling, numerical optimization, data processing</span>, and software development using <span class="text-blue-300 font-medium">Python, LabVIEW</span> and <span class="text-blue-300 font-medium">MATLAB</span>.
-                </p>
-                <p>
-                    Deeply interested in <span class="text-gray-200 font-medium">physical simulation, quantum computing</span> and <span class="text-gray-200 font-medium">nuclear physics</span>.
-                </p>
-            </div>
-            
-            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contact" class="px-8 py-3 rounded-full bg-primary text-white font-bold hover:bg-blue-600 transition-all shadow-lg shadow-blue-500/30">
-                    Get in Touch
-                </a>
-                <a href="#projects" class="px-8 py-3 rounded-full border border-gray-600 hover:border-white hover:text-white transition-all bg-transparent">
-                    View Projects
-                </a>
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 w-full flex-grow flex flex-col justify-center">
+            <div>
+                <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full">
+                    Physics Engineering & Scientific Computing
+                </div>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+                    Hi, I'm <span class="gradient-text">Stefan Jordi Giurgiu</span>
+                </h1>
+                
+                <div class="mt-6 max-w-3xl mx-auto text-base md:text-lg lg:text-xl text-gray-400 leading-relaxed space-y-5">
+                    <p>
+                        Engineering Physics student with a strong passion for <span class="text-white font-medium">science and technology</span>, backed by research experience at prestigious institutions such as <span class="text-secondary font-semibold">ICIQ</span> and <span class="text-primary font-semibold">ICFO</span>.
+                    </p>
+                    <p>
+                        Proactive and highly motivated individual with a quick learning curve. Skilled in <span class="text-white font-medium">computational modelling, numerical optimization, data processing</span>, and software development using <span class="text-blue-300 font-medium">Python, LabVIEW</span> and <span class="text-blue-300 font-medium">MATLAB</span>.
+                    </p>
+                    <p>
+                        Deeply interested in <span class="text-gray-200 font-medium">physical simulation, quantum computing</span> and <span class="text-gray-200 font-medium">nuclear physics</span>.
+                    </p>
+                </div>
+                
+                <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="px-8 py-3 rounded-full bg-primary text-white font-bold hover:bg-blue-600 transition-all shadow-lg shadow-blue-500/30">
+                        Get in Touch
+                    </a>
+                    <a href="#projects" class="px-8 py-3 rounded-full border border-gray-600 hover:border-white hover:text-white transition-all bg-transparent">
+                        View Projects
+                    </a>
+                </div>
             </div>
 
-            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center border-t border-gray-800 pt-8">
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center border-t border-gray-800 pt-8 w-full">
                 <div>
-                    <div class="text-3xl font-bold text-white">UPC</div>
-                    <div class="text-sm text-gray-500">Physics Engineering</div>
+                    <div class="text-2xl md:text-3xl font-bold text-white">UPC</div>
+                    <div class="text-xs md:text-sm text-gray-500">Physics Engineering</div>
                 </div>
                 <div>
-                    <div class="text-3xl font-bold text-white">AESS</div>
-                    <div class="text-sm text-gray-500">Technical Team Member</div>
+                    <div class="text-2xl md:text-3xl font-bold text-white">AESS</div>
+                    <div class="text-xs md:text-sm text-gray-500">Technical Team Member</div>
                 </div>
                 <div>
-                    <div class="text-3xl font-bold text-white">Fellow</div>
-                    <div class="text-sm text-gray-500">of Fundació Catalunya La Pedrera (Science Academy)</div>
+                    <div class="text-2xl md:text-3xl font-bold text-white">Fellow</div>
+                    <div class="text-xs md:text-sm text-gray-500">of Fundació Catalunya La Pedrera</div>
                 </div>
                 <div>
-                    <div class="text-3xl font-bold text-white leading-tight">Programming</div>
-                    <div class="text-sm text-gray-500">Python, MATLAB, LabVIEW, Julia</div>
+                    <div class="text-2xl md:text-3xl font-bold text-white leading-tight">Programming</div>
+                    <div class="text-xs md:text-sm text-gray-500">Python, MATLAB, LabVIEW</div>
                 </div>
             </div>
         </div>
@@ -278,7 +283,7 @@
         </div>
     </section>
 
-    <section id="projects" class="py-20 bg-card/30 relative">
+    <section id="projects" class="py-20 bg-card/30 relative border-t border-gray-800">
          <div class="absolute right-0 top-1/4 w-1/3 h-1/2 bg-blue-600/5 blur-[100px] pointer-events-none"></div>
 
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -405,6 +410,49 @@
         </div>
     </section>
 
+    <section id="workshops" class="py-20 bg-dark/60 relative border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-4 text-center">Workshops & Extracurriculars</h2>
+            <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto italic">
+                Driven by curiosity and a passion for continuous learning beyond the academic curriculum.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="glass-card p-8 rounded-2xl border border-white/10 hover:-translate-y-2 hover:border-primary/50 hover:shadow-[0_10px_25px_rgba(59,130,246,0.15)] transition-all duration-300">
+                    <h3 class="text-xl font-bold text-white mb-2">Fundamentals of Python Seminar</h3>
+                    <div class="text-primary text-sm font-bold mb-4 flex items-center">
+                        <i class="fas fa-university mr-2"></i>UPC <span class="mx-2 text-gray-600">|</span> <i class="far fa-calendar-alt mr-2"></i> Jan 27 – 31, 2025
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        An intensive, practical immersion into the Python ecosystem, ranging from core syntax to professional-grade application development. This seminar focused on writing clean, efficient, and modular code while mastering advanced data structures and algorithms. Key competencies included data management (CSV/JSON), professional debugging techniques, and automated testing (doctests) to ensure high software quality in real-world problem-solving.
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl border border-white/10 hover:-translate-y-2 hover:border-secondary/50 hover:shadow-[0_10px_25px_rgba(16,185,129,0.15)] transition-all duration-300">
+                    <h3 class="text-xl font-bold text-white mb-2">Talent Jove in Physics & Mathematics</h3>
+                    <div class="text-secondary text-sm font-bold mb-4 flex items-center">
+                        <i class="fas fa-university mr-2"></i>URV <span class="mx-2 text-gray-600">|</span> <i class="far fa-calendar-alt mr-2"></i> 2022 – 2024
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        A prestigious two-year enrichment program designed for high-achieving students with a strong aptitude for pure sciences. Through weekly three-hour sessions, I explored advanced concepts in physics and mathematics that transcend the standard academic curriculum. The program significantly strengthened my logical reasoning, critical analysis, and ability to tackle complex, multi-disciplinary problems.
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl border border-white/10 hover:-translate-y-2 hover:border-accent/50 hover:shadow-[0_10px_25px_rgba(245,158,11,0.15)] transition-all duration-300">
+                    <h3 class="text-xl font-bold text-white mb-2">Hack Night</h3>
+                    <div class="text-accent text-sm font-bold mb-4 flex items-center">
+                        <i class="fas fa-university mr-2"></i>UPC <span class="mx-2 text-gray-600">|</span> <i class="far fa-calendar-alt mr-2"></i> Feb 27 – 28, 2026
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        A collaborative, non-competitive hackathon hosted by Hackers@UPC designed to foster technical growth and creative freedom. Focused on the theme "Studying in the age of AI," I worked on personal coding projects and explored innovative tools for productivity. The experience included specialized workshops on developer environments and provided a low-pressure space to experiment with new technologies and collaborative workflows.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section id="skills" class="py-20 bg-dark border-t border-gray-800">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-white mb-12 text-center">Technical Skills & Languages</h2>
@@ -473,14 +521,6 @@
                             <div class="text-xs text-gray-400 uppercase">B2 - Cambridge</div>
                         </div>
                     </div>
-                    
-                    <h3 class="text-xl font-bold text-white mt-8 mb-4 flex items-center">
-                        <i class="fas fa-certificate text-purple-400 mr-3"></i> Workshops
-                    </h3>
-                    <ul class="text-sm text-gray-400 space-y-2">
-                        <li><i class="fas fa-check text-secondary mr-2"></i>Fundamentals of Python Seminar (UPC) - 2025</li>
-                        <li><i class="fas fa-check text-secondary mr-2"></i>Talent Jove in Physics & Mathematics (URV) - 2022/24</li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -515,7 +555,7 @@
             </div>
 
             <p class="text-gray-600 text-sm">
-                &copy; 2025 Stefan Jordi Giurgiu. Designed with Tailwind CSS.
+                &copy; 2026 Stefan Jordi Giurgiu. Designed with Tailwind CSS.
             </p>
         </div>
     </footer>
@@ -693,4 +733,3 @@
     </script>
 </body>
 </html>
-
