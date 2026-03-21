@@ -38,7 +38,7 @@ Estoy abierto a oportunidades de investigación y colaboración en física compu
 
 * **Email Universitario:** stefan.jordi.giurgiu@estudiantat.upc.edu
 * **Email Personal:** stefanjg272006@gmail.com
-* **LinkedIn:** www.linkedin.com/in/stefan-jordi-giurgiu-8b4463283
+* **LinkedIn:** https://www.linkedin.com/in/stefan-jordi-giurgiu-8b4463283
 
 ---
 📄 **Licencia / Derechos de Autor**
