@@ -22,9 +22,10 @@ A lo largo de mi desarrollo, he investigado y colaborado en instituciones de pre
 
 Además del código de la página web, en este repositorio puedes encontrar los documentos originales (PDFs) de mis investigaciones principales para su descarga y consulta:
 
-1. **`Topological_Quantum_Materials.pdf`**: Estudio teórico y simulación práctica de Aislantes Topológicos y el Efecto Hall Cuántico usando el modelo BHZ.
-2. **`Report_Stefan_Jordi_Giurgiu.pdf`**: Reporte científico de mi estancia en el ICIQ sobre el modelado de la especiación de uranilo en medios de carbonato.
-3. **`Stefan_Jordi_Giurgiu_TDR.pdf`**: Trabajo de investigación galardonado sobre el impacto experimental de la lluvia ácida en cultivos de trigo.
+1. **[`Topological_Quantum_Materials.pdf`](./Topological_Quantum_Materials.pdf)**: Estudio teórico y simulación práctica de Aislantes Topológicos y el Efecto Hall Cuántico usando el modelo BHZ.
+2. **[`Report_Stefan_Jordi_Giurgiu.pdf`](./Report_Stefan_Jordi_Giurgiu.pdf)**: Reporte científico de mi estancia en el ICIQ sobre el modelado de la especiación de uranilo en medios de carbonato.
+3. **[`Stefan_Jordi_Giurgiu_TDR.pdf`](./Stefan_Jordi_Giurgiu_TDR.pdf)**: Trabajo de investigación galardonado sobre el impacto experimental de la lluvia ácida en cultivos de trigo.
+4. **[`simulations`](./simulations)**: Carpeta donde está solo el código que se ha usado para hacer las simulaciones de los sistemas físicos.
 
 ## 🚀 Uso Local
 
