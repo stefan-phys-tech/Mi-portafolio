@@ -10,13 +10,13 @@ Soy estudiante de Ingeniería Física en la Universidad Politécnica de Cataluñ
 * Simulación física y modelado computacional.
 * Física cuántica y física nuclear.
 
-A lo largo de mi desarrollo, he investigado y colaborado en instituciones de prestigio como el **ICFO** (Instituto de Ciencias Fotónicas) y el **ICIQ** (Instituto Catalán de Investigación Química), y actualmente soy miembro del equipo técnico de propulsión de **AESS - UPC**.
+A lo largo de mi desarrollo, he investigado y colaborado en instituciones de prestigio como el **ICFO** (Instituto de Ciencias Fotónicas) y el **ICIQ** (Instituto Catalán de Investigación Química), y actualmente soy miembro del equipo técnico de simulación y análisis de **AESS - UPC**.
 
 ## 💻 Habilidades Técnicas Destacadas
 
-* **Programación:** Python (Numpy, SciPy, Pandas), MATLAB, LabVIEW, SQL, Java, Julia.
-* **Ciencia Computacional:** DFT (Teoría del Funcional de la Densidad), Dinámica Molecular, Kwant, POMSimulator.
-* **Herramientas:** Git, optimización numérica, resolución de ecuaciones diferenciales.
+* **Programación y herramientas computacionles** Python (Numpy, SciPy, Pandas, Kwant), MATLAB, LabVIEW, SQL, Java, Julia, Git
+* **Ciencia Computacional:** DFT (Teoría del Funcional de la Densidad), Dinámica Molecular (DM), POMSimulator, Optimización numérica, Resolución de ecuaciones diferenciales.
+* **Herramientas Científicas y Habilidades de Laboratorio:** LATEX,  Espectroscopia fotoelectrónica de rayos X (XPS), Microscopía Electrónica de Barrido (SEM)
 
 ## 📂 Investigaciones y Proyectos Incluidos
 
