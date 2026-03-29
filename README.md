@@ -1,4 +1,4 @@
-# Stefan Jordi Giurgiu | Portafolio Personal 🚀
+# Stefan Jordi Giurgiu | Portafolio Personal 
 
 Bienvenido al repositorio de mi portafolio personal web. Este sitio web ha sido diseñado para presentar mi trayectoria académica, experiencia en investigación y proyectos destacados en el ámbito de la Ingeniería Física y la Computación Científica.
 
@@ -15,7 +15,7 @@ A lo largo de mi desarrollo, he investigado y colaborado en instituciones de pre
 ## 💻 Habilidades Técnicas Destacadas
 
 * **Programación y herramientas computacionles** Python (Numpy, SciPy, Pandas, Kwant), MATLAB, LabVIEW, SQL, Java, Julia, Git
-* **Ciencia Computacional:** DFT (Teoría del Funcional de la Densidad), Dinámica Molecular (DM), POMSimulator, Optimización numérica, Resolución de ecuaciones diferenciales.
+* **Ciencia Computacional:** Teoría del Funcional de la Densidad (DFT), Dinámica Molecular (DM), POMSimulator, Optimización numérica, Resolución de ecuaciones diferenciales.
 * **Herramientas Científicas y Habilidades de Laboratorio:** LATEX,  Espectroscopia fotoelectrónica de rayos X (XPS), Microscopía Electrónica de Barrido (SEM)
 
 ## 📂 Investigaciones y Proyectos Incluidos
