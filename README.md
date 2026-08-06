@@ -24,8 +24,9 @@ Además del código de la página web, en este repositorio puedes encontrar los 
 
 1. **[`Topological_Quantum_Materials.pdf`](./Topological_Quantum_Materials.pdf)**: Estudio teórico y simulación práctica de Aislantes Topológicos y el Efecto Hall Cuántico usando el modelo BHZ.
 2. **[`Report_Stefan_Jordi_Giurgiu.pdf`](./Report_Stefan_Jordi_Giurgiu.pdf)**: Reporte científico de mi estancia en el ICIQ sobre el modelado de la especiación de uranilo en medios de carbonato.
-3. **[`Stefan_Jordi_Giurgiu_TDR.pdf`](./Stefan_Jordi_Giurgiu_TDR.pdf)**: Trabajo de investigación galardonado sobre el impacto experimental de la lluvia ácida en cultivos de trigo.
+3. **[`Big_or_Small_project.pdf`](./Big_or_Small_project.pdf)**: Trabajo de investigación sobre dinámica de partículas.
 4. **[`Simulations`](./Simulations)**: Carpeta donde está solo el código que se ha usado para hacer las simulaciones de los sistemas físicos.
+5. **[`Project CFTC`](./Project CFTC)**: Carpeta donde está solo el código que se ha usado para hacer las simulaciones del proyecto Big or Small.
 
 ## 🚀 Uso Local
 
