@@ -105,10 +105,10 @@
                 
                 <div class="mt-6 max-w-3xl mx-auto text-base md:text-lg lg:text-xl text-gray-400 leading-relaxed space-y-5">
                     <p>
-                        Engineering Physics student with a strong passion for <span class="text-white font-medium">science and technology</span>, backed by research experience at prestigious international institutions such as <span class="text-secondary font-semibold">ICIQ</span> and <span class="text-primary font-semibold">ICFO</span>.
+                        Engineering Physics student with a strong passion for <span class="text-white font-medium">science and technology</span>, backed by research experience at prestigious international institutions such as <span class="text-secondary font-semibold">ICIQ</span>, <span class="text-primary font-semibold">ICFO</span> and <span class="text-red-300 font-medium">CFTC</span> .
                     </p>
                     <p>
-                        Proactive and highly motivated individual with a quick learning curve. Skilled in <span class="text-white font-medium">computational modelling, numerical optimization, data processing, and software development</span> using <span class="text-blue-300 font-medium">Python, MATLAB</span> and <span class="text-blue-300 font-medium">C++</span>.
+                        Proactive and highly motivated individual with a quick learning curve. Skilled in <span class="text-white font-medium">computational modelling, numerical optimization, data processing, and software development</span> using <span class="text-blue-300 font-medium">Python, MATLAB</span>.
                     </p>
                     <p>
                         <span class="text-white font-medium">Currently seeking research and collaboration opportunities in computational physics and engineering.</span>
@@ -142,7 +142,7 @@
                 </div>
                 <div>
                     <div class="text-2xl md:text-3xl font-bold text-white leading-tight">Programming</div>
-                    <div class="text-xs md:text-sm text-gray-500">Python, MATLAB, C++</div>
+                    <div class="text-xs md:text-sm text-gray-500">Python, MATLAB</div>
                 </div>
             </div>
         </div>
@@ -473,7 +473,7 @@
                         <div>
                             <div class="flex justify-between text-sm mb-1">
                                 <span class="text-gray-300">Python (Numpy, SciPy, Pandas)</span>
-                                <span class="text-primary">80%</span>
+                                <span class="text-primary">90%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2">
                                 <div class="bg-primary h-2 rounded-full" style="width: 80%"></div>
@@ -490,11 +490,11 @@
                         </div>
                         <div>
                             <div class="flex justify-between text-sm mb-1">
-                                <span class="text-gray-300">C++</span>
-                                <span class="text-primary">70%</span>
+                                <span class="text-gray-300">LabVIEW</span>
+                                <span class="text-primary">50%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-primary h-2 rounded-full" style="width: 70%"></div>
+                                <div class="bg-primary h-2 rounded-full" style="width: 50%"></div>
                             </div>
                         </div>
                         <div class="flex gap-4 mt-4">
@@ -567,6 +567,53 @@
         </div>
     </footer>
 
+
+    <div id="modal-cftc" class="modal fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+        <div class="modal-content glass-card w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative">
+            <button onclick="closeModal('modal-cftc')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="p-8">
+                <h2 class="text-3xl font-bold text-white mb-2">Big or Small: The Effect of Size on Group Dynamics in a Crowded Environment</h2>
+                <div class="text-purple-400 text-sm font-semibold mb-6">Centro de Física Teórica e Computacional (CFTC)</div>
+                
+                <div class="prose-invert">
+                    <h3 style="color: #a855f7;">1. Theoretical Background</h3>
+                    <p>
+                        Unlike passive colloidal particles that exhibit standard Brownian motion in thermal equilibrium, active particles continuously convert energy into directed mechanical motion. This project investigates the emergent collective behaviors of these self-propelled particles when navigating environments highly crowded with passive obstacles.
+                    </p>
+
+                    <h3 style="color: #a855f7;">2. Numerical Simulation Framework</h3>
+                    <p>
+                        A custom C++ script was developed to model two-dimensional, overdamped Langevin dynamics. The core computational engine evaluated:
+                    </p>
+                    <ul>
+                        <li><strong>Translational Forces:</strong> Computed using a Lennard-Jones potential applied via an optimized Verlet neighbor list.</li>
+                        <li><strong>Environmental Torques:</strong> Modeled to simulate dynamic steering away from dense passive particle regions.</li>
+                    </ul>
+                    <p>
+                        Massive parallel simulations were executed using Python, applying k-dimensional trees (<code>cKDTree</code>) for comprehensive spatial and connected-component analysis.
+                    </p>
+
+                    <h3 style="color: #a855f7;">3. Results & Discussion</h3>
+                    <p>
+                        The data demonstrates a profound non-linear relationship between cluster size and obstacle density. We found that the size of the active particle directly dictates the optimal environment for pathway formation: small particles become locally trapped in dense matrices, whereas channels actively assist larger particles in stable aggregation.
+                    </p>
+                    <p>
+                        Furthermore, the analysis revealed a critical density threshold at 20% for medium-sized particles. Passing this threshold induces a spontaneous symmetry breaking (pitchfork bifurcation), resulting in the onset of spontaneous collective spinning.
+                    </p>
+                </div>
+                
+                <div class="mt-8 pt-6 border-t border-gray-700 flex justify-between items-center">
+                    <span class="text-sm text-gray-500">Author: Stefan Jordi Giurgiu | Institution: CFTC</span>
+                    <a href="Big_or_Small_project.pdf" download class="bg-purple-600 hover:bg-purple-500 text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors flex items-center shadow-lg shadow-purple-500/20">
+                        <i class="fas fa-file-pdf mr-2"></i> Download Full PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div id="modal-topo" class="modal fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
         <div class="modal-content glass-card w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative">
             <button onclick="closeModal('modal-topo')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
@@ -663,54 +710,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Modal: Big or Small Project -->
-    <div id="modal-cftc" class="modal fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-        <div class="modal-content glass-card w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative">
-            <button onclick="closeModal('modal-cftc')" class="absolute top-4 right-4 text-gray-400 hover:text-white bg-gray-800 hover:bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="p-8">
-                <h2 class="text-3xl font-bold text-white mb-2">Big or Small: The Effect of Size on Group Dynamics in a Crowded Environment</h2>
-                <div class="text-purple-400 text-sm font-semibold mb-6">Centro de Física Teórica e Computacional (CFTC)</div>
-                
-                <div class="prose-invert">
-                    <h3 style="color: #a855f7;">1. Theoretical Background</h3>
-                    <p>
-                        Unlike passive colloidal particles that exhibit standard Brownian motion in thermal equilibrium, active particles continuously convert energy into directed mechanical motion. This project investigates the emergent collective behaviors of these self-propelled particles when navigating environments highly crowded with passive obstacles.
-                    </p>
-
-                    <h3 style="color: #a855f7;">2. Numerical Simulation Framework</h3>
-                    <p>
-                        A custom C++ script was developed to model two-dimensional, overdamped Langevin dynamics. The core computational engine evaluated:
-                    </p>
-                    <ul>
-                        <li><strong>Translational Forces:</strong> Computed using a Lennard-Jones potential applied via an optimized Verlet neighbor list.</li>
-                        <li><strong>Environmental Torques:</strong> Modeled to simulate dynamic steering away from dense passive particle regions.</li>
-                    </ul>
-                    <p>
-                        Massive parallel simulations were executed using Python, applying k-dimensional trees (<code>cKDTree</code>) for comprehensive spatial and connected-component analysis.
-                    </p>
-
-                    <h3 style="color: #a855f7;">3. Results & Discussion</h3>
-                    <p>
-                        The data demonstrates a profound non-linear relationship between cluster size and obstacle density. We found that the size of the active particle directly dictates the optimal environment for pathway formation: small particles become locally trapped in dense matrices, whereas channels actively assist larger particles in stable aggregation.
-                    </p>
-                    <p>
-                        Furthermore, the analysis revealed a critical density threshold at 20% for medium-sized particles. Passing this threshold induces a spontaneous symmetry breaking (pitchfork bifurcation), resulting in the onset of spontaneous collective spinning.
-                    </p>
-                </div>
-                
-                <div class="mt-8 pt-6 border-t border-gray-700 flex justify-between items-center">
-                    <span class="text-sm text-gray-500">Author: Stefan Jordi Giurgiu | Institution: CFTC</span>
-                    <a href="Big_or_Small_project.pdf" download class="bg-purple-600 hover:bg-purple-500 text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors flex items-center shadow-lg shadow-purple-500/20">
-                        <i class="fas fa-file-pdf mr-2"></i> Download Full PDF
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
     <script>
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
