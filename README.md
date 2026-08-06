@@ -26,7 +26,7 @@ Además del código de la página web, en este repositorio puedes encontrar los 
 2. **[`Report_Stefan_Jordi_Giurgiu.pdf`](./Report_Stefan_Jordi_Giurgiu.pdf)**: Reporte científico de mi estancia en el ICIQ sobre el modelado de la especiación de uranilo en medios de carbonato.
 3. **[`Big_or_Small_project.pdf`](./Big_or_Small_project.pdf)**: Trabajo de investigación sobre dinámica de partículas.
 4. **[`Simulations`](./Simulations)**: Carpeta donde está solo el código que se ha usado para hacer las simulaciones de los sistemas físicos.
-5. **[`Project CFTC`](./Project CFTC)**: Carpeta donde está solo el código que se ha usado para hacer las simulaciones del proyecto Big or Small.
+5. **[`Project_CFTC`](./Project_CFTC)**: Carpeta donde está solo el código que se ha usado para hacer las simulaciones del proyecto Big or Small.
 
 ## 🚀 Uso Local
 
